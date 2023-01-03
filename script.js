@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
 
-  const response = await fetch('https://e1-server.ml:1033', {
+  const response = await fetch('https://usa.e1-server.ml:1043', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ prompt: data.get('prompt')})
